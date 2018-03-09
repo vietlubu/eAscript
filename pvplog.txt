@@ -8,6 +8,7 @@
 //= - Create table `pvplog` when start script.
 //= - Add new record when has OnPCKillEvent
 //= - Remove NCP PvP Ranking if you don't want to use.
+//= - rAthena Topic: https://rathena.org/board/topic/114930-utility-pvp-log-simple-sql-pvp-logging/
 //===== Compatible With: ===================================== 
 //= rAthena Project
 //===== Changelogs: ==========================================
