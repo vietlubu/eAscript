@@ -74,7 +74,7 @@ prontera,155,181,5	script	PvP Ranking	430,{
 
 -	script	pvplog	-1,{
 	OnInit:
-		query_sql("CREATE TABLE IF NOT EXISTS `pvplog` (`pvp_id` mediumint(9) unsigned NOT NULL auto_increment, `pvp_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP, `killer_id` int(11) NOT NULL default '0', `victim_id` int(11) NOT NULL default '0', `map` varchar(11) NOT NULL default '', PRIMARY KEY  (`pvp_id`)) ENGINE=MyISAM AUTO_INCREMENT=1;");
+		query_sql("CREATE TABLE IF NOT EXISTS `pvplog` (`pvp_id` MEDIUMINT(9) UNSIGNED NOT NULL AUTO_INCREMENT, `pvp_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, `killer_id` INT(11) NOT NULL DEFAULT '0', `victim_id` INT(11) NOT NULL DEFAULT '0', `map` VARCHAR(11) NOT NULL DEFAULT '', PRIMARY KEY (`pvp_id`)) ENGINE=MyISAM AUTO_INCREMENT=1;");
 		end;
 
 	OnPCKillEvent:
